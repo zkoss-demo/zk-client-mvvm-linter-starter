@@ -9,7 +9,7 @@ before upgrading to Client MVVM.
 ## Setup and Execution
 
 For a detailed guide on how to set up and run the linter, please refer to our blog post:
-[Introducing ZK Client MVVM Linter](https://blog.zkoss.org/2023/07/24/zk-10-preview:-introducing-zk-client-mvvm-linter/).
+[Introducing ZK Client MVVM Linter](https://blog.zkoss.org/2023/07/31/zk-10-preview:-introducing-zk-client-mvvm-linter/).
 
 ## Lint Rules
 
@@ -18,7 +18,7 @@ For a comprehensive list of all lint rules along with their descriptions, please
 ## Custom Rules
 
 For a detailed guide on how to create custom lint rules, please refer to our blog post:
-[Introducing ZK Client MVVM Linter](https://blog.zkoss.org/2023/07/24/zk-10-preview:-introducing-zk-client-mvvm-linter/).
+[Introducing ZK Client MVVM Linter](https://blog.zkoss.org/2023/07/31/zk-10-preview:-introducing-zk-client-mvvm-linter/).
 Additionally, you can find some examples in the `org.zkoss.zklinter.impl.rule` package.
 
 ## Limitations
