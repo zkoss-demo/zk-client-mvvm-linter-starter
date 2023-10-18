@@ -28,8 +28,8 @@ repositories {
 }
 
 dependencies {
-    implementation "org.zkoss.zk:zkmax:10.0.0.FL.20230721-Eval"
-    implementation "org.zkoss.zk:zklinter:10.0.0.FL.20230825-Eval"
+    implementation "org.zkoss.zk:zkmax:10.0.0-Beta-Eval"
+    implementation "org.zkoss.zk:zklinter:10.0.0-Beta-Eval"
 }
 
 tasks.register('runLinter', JavaExec) {
