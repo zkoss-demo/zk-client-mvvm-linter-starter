@@ -1,0 +1,6 @@
+<zk>
+    <div align="left" style="padding-right: 16px">
+        <button id="submit" label="Submit Offer" disabled="true"
+                onClick='signaturePreview.open(self, "before_end");'/>
+    </div>
+</zk>
