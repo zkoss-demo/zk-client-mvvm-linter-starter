@@ -3,4 +3,5 @@
         <button id="submit" label="Submit Offer" disabled="true"
                 onClick='signaturePreview.open(self, "before_end");'/>
     </div>
+    <style dynamic="true" src="style.css"/>
 </zk>
