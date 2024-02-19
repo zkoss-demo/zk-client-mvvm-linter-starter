@@ -1,4 +1,4 @@
-package org.zkoss.zklinter.impl.rule.removal;
+package org.zkoss.zklinter.impl.rule;
 
 import org.zkoss.idom.Element;
 import org.zkoss.zklinter.*;

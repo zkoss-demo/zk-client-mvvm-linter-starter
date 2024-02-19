@@ -1,4 +1,4 @@
-package org.zkoss.zklinter.impl.rule.removal;
+package org.zkoss.zklinter.impl.rule;
 
 import java.util.List;
 
