@@ -33,11 +33,12 @@ public class ZK10Upgrade extends Rule {
                 new RemovedAttribute("preloadSize", List.of("grid", "listbox"), "Deprecated since 5.0.8, use <custom-attributes> instead."),
                 new RemovedAttribute("checkable", List.of("listitem", "treeitem"), "Deprecated since 8.0.0, please use selectable"),
                 new RemovedAttribute("framable", List.of("panel"), "Deprecated since 5.0.6, use border instead."),
-                new RemovedAttribute("spans", List.of("row","group", "groupfoot"), "Deprecated since 5.0.0, use <cell spans> instead."),
+                new RemovedAttribute("spans", List.of("row","group", "groupfoot"), "Deprecated since 5.0.0, use <cell colspan> instead."),
                 new RemovedAttribute("type", List.of("script"), "Deprecated since 5.0.0, text/javascript is always assumed, please remove it."),
                 new RemovedAttribute("dynamic", List.of("style"), "Deprecated since 5.0.0, it is decided automatically, please remove it."),
                 new RemovedAttribute("treeitemRenderer", List.of("tree"), "Deprecated since 5.0.6, replaced with itemRenderer"),
-                new RemovedAttribute("defaultActionOnShow", List.of("window"), "Deprecated since 5.0.0, replaced with action.")
+                new RemovedAttribute("defaultActionOnShow", List.of("window"), "Deprecated since 5.0.0, replaced with action."),
+                new RemovedAttribute("src", List.of("a", "button", "caption", "checkbox", "comboitem", "fisheye", "footer", "listfooter", "treefooter", "auheader", "column", "listheader", "treecol", "listcell", "menu", "menuitem", "nav", "navitem", "orgnode", "tab", "treecell"), "Deprecated since 3.5.0, use image instead.")
         );
     }
 
