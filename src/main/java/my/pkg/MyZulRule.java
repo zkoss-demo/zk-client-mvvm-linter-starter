@@ -9,7 +9,7 @@
 
 Copyright (C) 2023 Potix Corporation. All Rights Reserved.
 */
-package org.zkoss.zklinter.impl.rule;
+package my.pkg;
 
 import org.zkoss.idom.Element;
 import org.zkoss.zklinter.Rule;
