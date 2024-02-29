@@ -6,7 +6,7 @@ ZK Client MVVM Linter Starter is the starter project for ZK Client MVVM Linter,
 a tool designed for identifying potential compatibility issues in Server MVVM files
 before upgrading to Client MVVM.
 
-## Setup and Execution
+## Setup and Scan
 
 For a detailed guide on how to set up and run the linter, please refer to our blog post:
 [Introducing ZK Client MVVM Linter](https://blog.zkoss.org/2023/08/01/zk-10-preview:-introducing-zk-client-mvvm-linter/).
@@ -14,7 +14,8 @@ For a detailed guide on how to set up and run the linter, please refer to our bl
 1. check `app.properties` in this project
 set your target path for `zulDir`, `javaDir`, and other options
 1. `gradlew runLinter`
- 
+
+
 ## Lint Rules
 
 For a comprehensive list of all lint rules along with their descriptions, please refer to the [RULES.md](RULES.md) file.
