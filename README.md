@@ -11,9 +11,9 @@ before upgrading to Client MVVM.
 For a detailed guide on how to set up and run the linter, please refer to our blog post:
 [Introducing ZK Client MVVM Linter](https://blog.zkoss.org/2023/08/01/zk-10-preview:-introducing-zk-client-mvvm-linter/).
 
-1. check `app.properties` in this project
-set your target path for `zulDir`, `javaDir`, and other options
-1. `gradlew runLinter`
+1. Check `app.properties` in this project
+to set your target path for `zulDir`, `javaDir`, and other options
+2. Run with `./gradlew runLinter`
 
 
 ## Lint Rules
