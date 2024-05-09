@@ -24,7 +24,20 @@ For a comprehensive list of all lint rules along with their descriptions, please
 
 For a detailed guide on how to create custom lint rules, please refer to our blog post:
 [Introducing ZK Client MVVM Linter](https://blog.zkoss.org/2023/08/01/zk-10-preview:-introducing-zk-client-mvvm-linter/).
-Additionally, you can find some examples in the `org.zkoss.zklinter.impl.rule` package.
+Additionally, you can find some examples in the `org.zkoss.zklinter.upgrade.rule` package.
+
+## Rules for ZK 10 Upgrade
+
+Specify custom rule `org.zkoss.zklinter.upgrade.rule.ZK10Upgrade` in `app.properties` to scan zul for removed attributes in order to upgrade to ZK 10.
+
+```properties
+customRules=org.zkoss.zklinter.upgrade.rule.*
+```
+If you just want to scan zul for upgrade, you can disable client mvvm related rules:
+
+```properties
+disabledRules=org.zkoss.zklinter.impl.rule.*
+```
 
 ## Limitations
 

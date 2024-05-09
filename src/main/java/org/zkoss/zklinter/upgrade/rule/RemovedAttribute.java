@@ -1,4 +1,4 @@
-package org.zkoss.zklinter.impl.rule;
+package org.zkoss.zklinter.upgrade.rule;
 
 import java.util.List;
 
