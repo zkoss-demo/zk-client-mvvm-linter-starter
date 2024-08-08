@@ -33,7 +33,6 @@
 | Listen        | To ensure the decoupling of ViewModel from View, Client MVVM doesn't support MVC `@Listen`, please use a command binding `onXXX="@command(...)"` in the Zul file instead                                                                |
 | SelectorParam | To ensure the decoupling of ViewModel from View, Client MVVM doesn't support `@SelectorParam`, please change the usage or continue using server MVVM                                                                                    |
 | Wire          | To ensure the decoupling of ViewModel from View, Client MVVM doesn't support `@Wire`, please change the usage or continue using server MVVM                                                                                             |
-| WireVariable  | To ensure the decoupling of ViewModel from View, Client MVVM doesn't support `@WireVariable`, please change the usage or continue using server MVVM                                                                                     |
 
 ### Class
 | Name           | Description                                                                                                                                  | 
