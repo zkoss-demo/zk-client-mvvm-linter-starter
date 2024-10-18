@@ -51,3 +51,44 @@ While ZK Client MVVM Linter covers most scenarios, there are still some limitati
   please note that `ProxyTargetHandler` is not supported for Client MVVM.
 
 Thank you for using ZK Client MVVM Linter!
+
+## Use ZK Linter in a Maven Project
+
+If you are using Maven, follow the instructions below:
+
+1. Include the zklinter jar:
+
+```xml
+<dependency>
+    <groupId>org.zkoss.zk</groupId>
+    <artifactId>zklinter</artifactId>
+    <version>10.0.0-Eval</version>
+</dependency>
+```
+Check https://mavensync.zkoss.org/maven2/org/zkoss/zk/ for the latest version.
+2. Add app.properties
+3. Put upgrade rule classes into your project source.
+4. Run zklinter with exec-maven-plugin:
+```xml
+<plugin>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>exec-maven-plugin</artifactId>
+    <version>3.1.1</version>
+    <executions>
+        <execution>
+            <id>zklinter</id>
+            <phase>process-resources</phase>
+            <goals>
+                <goal>java</goal>
+            </goals>
+            <configuration>
+                <mainClass>org.zkoss.zklinter.App</mainClass>
+            </configuration>
+        </execution>
+    </executions>
+</plugin>
+
+```   
+Then run the Maven goal below to start scanning:
+
+`mvn process-resources`
