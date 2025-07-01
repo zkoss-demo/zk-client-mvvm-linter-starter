@@ -18,7 +18,7 @@ import org.zkoss.zklinter.ZulFileVisitor;
 public class MyZulRule extends Rule {
     @Override
     protected String getDescription() {
-        return "My Custom Zul Rule - Found a `<toolbar>` element";
+        return "My Custom Zul Rule - Found a `<button>` element";
     }
 
     @Override
@@ -27,7 +27,7 @@ public class MyZulRule extends Rule {
             @Override
             protected void visitElement(Element node) {
                 // insert your code here
-                if ("toolbar".equals(node.getLocalName())) {
+                if ("button".equals(node.getLocalName())) {
                     report(node, getDescription());
                 }
             }

@@ -1,7 +1,7 @@
 # ZK Client MVVM Lint Rules
 
 ## General
-| Code             | Description                                                                                                                                                                                |
+| Name             | Description                                                                                                                                                                                |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | WarnUncheckedZul | Zul file path evaluated at runtime using `${...}` or `@(...)` is not checked, please supply the path as a constant string (e.g. `src="/dir/file.zul"`)                                     |
 | WarnUncheckedVM  | ViewModel `@id('vm') @init(...)` is not checked because it's not a fully-qualified class name, please move the Java code to a separate Java file and supply its fully-qualified class name |
@@ -9,7 +9,7 @@
 ## Zul Rules
 
 ### Binding
-| Code                | Description                                                                                                                               | 
+| Name                | Description                                                                                                                               | 
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | ModelELBinding      | Client MVVM doesn't support EL `model="${...}"` with data binding `@init/load/save/bind(...)`, please continue using server MVVM          |
 | ItemRendererBinding | Client MVVM doesn't support server-side ItemRenderer `itemRenderer="@init/load/save/bind(...)"`, please use `<template>` instead          |
@@ -17,11 +17,11 @@
 | OnEvent             | Client MVVM doesn't support adding event listeners in zscript `onXXX="..."`, please use a command binding `onXXX="@command(...)"` instead |
 
 ### Component
-| Name                | Description                                                                                                                                                                                | 
-|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| SortAttribute       | Client MVVM doesn't support `sort` attribute, please continue using Server MVVM                                                                                                            |
-| FragmentComponent   | Client MVVM doesn't support `<fragment>`, please refer to [the HTML Tags page](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/UI_Patterns/HTML_Tags) for alternatives               |
-| TemplateOutsideMVVM | Client MVVM doesn't support `<template>` outside root view component, please move it to become a descendant of the root view component (i.e. the component with the `viewModel` attribute) |
+| Name                | Description                                                                                                                                                                                                                                                     | 
+|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| SortAttribute       | Client MVVM doesn't support `sort` attribute, please continue using Server MVVM                                                                                                                                                                                 |
+| FragmentComponent   | Client MVVM doesn't support `<fragment>`, please refer to [the HTML Tags page](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/UI_Patterns/HTML_Tags) for alternatives; Disabled when upgrading to 10.2.0 or later, as `<fragment>` was removed in 10.2.0 |
+| TemplateOutsideMVVM | Client MVVM doesn't support `<template>` outside root view component, please move it to become a descendant of the root view component (i.e. the component with the `viewModel` attribute)                                                                      |
 
 ## Java Rules
 
@@ -50,3 +50,8 @@
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | FormLegacy          | Client MVVM doesn't support `FormLegacy`, please use `Form` instead                                                                         |
 | ConverterCastObject | In Client MVVM, `Converter` must not cast an `Object` type parameter to another type, please change the usage or continue using server MVVM |
+
+# ZK Upgrade Rules
+| Name                           | Description                                                                                                                 |
+|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| RemovedComponentsAndAttributes | Check the components and attributes removed since the version specified by `upgradeToVersion` in the `app.properties` file. |

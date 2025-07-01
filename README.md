@@ -28,11 +28,10 @@ Additionally, you can find some examples in the `org.zkoss.zklinter.upgrade.rule
 
 ## Rules for ZK 10 Upgrade
 
-Specify custom rule `org.zkoss.zklinter.upgrade.rule.ZK10Upgrade` in `app.properties` to scan zul for removed attributes in order to upgrade to ZK 10.
+Since zklinter 10.2.0-Eval, specify `upgradeToVersion` in `app.properties`
+to enable the `org.zkoss.zklinter.upgrade.RemovedComponentsAndAttributes` rule,
+which scans zul files for removed components and attributes.
 
-```properties
-customRules=org.zkoss.zklinter.upgrade.rule.*
-```
 If you just want to scan zul for upgrade, you can disable client mvvm related rules:
 
 ```properties
@@ -65,10 +64,9 @@ If you are using Maven, follow the instructions below:
     <version>10.2.0-Eval</version>
 </dependency>
 ```
-Check https://mavensync.zkoss.org/maven2/org/zkoss/zk/ for the latest version.
+Check https://mavensync.zkoss.org/eval/org/zkoss/zk/ for the latest version.
 2. Add app.properties
-3. Put upgrade rule classes into your project source.
-4. Run zklinter with exec-maven-plugin:
+3. Run zklinter with exec-maven-plugin:
 ```xml
 <plugin>
     <groupId>org.codehaus.mojo</groupId>

@@ -2,12 +2,16 @@ package org.zkoss.zklinter.upgrade.rule;
 
 import org.zkoss.idom.Element;
 import org.zkoss.zklinter.*;
+import org.zkoss.zklinter.upgrade.RemovedComponentsAndAttributes;
 
 import java.util.List;
 
 /**
  * a collection of rules for all removed attributes since zk 10.0.0
+ * @deprecated as of release 10.2.0, replaced by {@link RemovedComponentsAndAttributes}.
+ * To enable {@link RemovedComponentsAndAttributes}, specify upgradeToVersion in the app.properties file.
  */
+@Deprecated(since = "10.2.0")
 public class ZK10Upgrade extends Rule {
 
     protected static List<RemovedAttribute> attributeList;
