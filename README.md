@@ -61,7 +61,7 @@ If you are using Maven, follow the instructions below:
 <dependency>
     <groupId>org.zkoss.zk</groupId>
     <artifactId>zklinter</artifactId>
-    <version>10.2.0-Eval</version>
+    <version>10.3.0-Eval</version>
 </dependency>
 ```
 Check https://mavensync.zkoss.org/eval/org/zkoss/zk/ for the latest version.
